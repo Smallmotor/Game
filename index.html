@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            outline: none;
+            
+        }
+        .box{
+            width: 800px;
+            height: 600px;
+            margin:  auto;
+        }
+        #oul{
+            width: 600px;
+            height: 600px;
+            border: 2px solid paleturquoise;
+            float: left;
+        }
+        li{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            list-style: none;
+            float: left;
+        }
+        .box1{
+            width: 180px;
+            height: 400px;
+            float: right;
+            padding-top: 200px;
+            font-size: 20px;
+        }
+        #level{
+            width: 100%;
+            height: 40px;
+        }
+        #ls{
+            color:paleturquoise;
+            margin-left: 10px;
+        }
+        #dqcd{
+            color:paleturquoise;
+            margin-left: 10px;
+        }
+        #btn1{
+            width: 50%;
+            height: 30px;
+            margin-left: 40px;
+            margin-top: 20px;
+            background: palegreen;
+            color: #fff;
+            
+        }
+        #btn2{
+            width: 50%;
+            height: 30px;
+            margin-left: 40px;
+            margin-top: 20px;
+            background: palegreen;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <ul id="oul">
+                
+        </ul>
+        <div class="box1">
+            <p>最佳历史纪录:<span id="ls">0</span></p>
+            <p >当前长度:<span id="dqcd">0</span></p>
+            <select id="level">
+                <option value="300">初级</option>
+                <option value="200">中级</option>
+                <option value="100">较难</option>
+            </select>
+            <input type="button" id="btn1" value="开始">
+            <input type="button" id="btn2" value="暂停">
+        </div>
+    </div>
+
+    <audio src="mp3/bg.mp3" loop id="bgaudio"></audio>
+    <audio src="mp3/go.wav" id="go"></audio>
+    <audio src="mp3/chi.mp3" id="chi"></audio>
+        
+    
+
+    <script type="text/javascript" src="index.js">
+        
+    </script>
+</body>
+</html>
